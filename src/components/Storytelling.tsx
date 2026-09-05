@@ -58,7 +58,16 @@ export default function Storytelling({ onSave }: Props) {
 
   if (phase === "pick")
     return (
-      <section className="card">
+      <>
+        <section className="card focus">
+          <div className="k">What do I do?</div>
+          <div className="v">
+            A grown-up reads you a story one time. Then it's your turn — stand up and tell the story
+            back in your own words. No notes, no reading, no time limit.
+          </div>
+        </section>
+
+        <section className="card">
         <h2>Pick a story</h2>
         <p className="sub">
           You read it aloud once. She never sees the text. Then she retells it in her own words,
@@ -112,7 +121,8 @@ export default function Storytelling({ onSave }: Props) {
             Open the reading screen
           </button>
         </div>
-      </section>
+        </section>
+      </>
     );
 
   if (phase === "read")

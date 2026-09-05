@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Today from "./components/Today";
 import Writing from "./components/Writing";
 import Storytelling from "./components/Storytelling";
 import Progress from "./components/Progress";
@@ -6,21 +7,21 @@ import { addSession, deleteSession, listSessions } from "./lib/db";
 import type { Session } from "./types";
 
 /** Contest dates. Change these once and the countdown follows. */
-const DATES = {
+export const DATES = {
   writing: new Date(2026, 9, 20), // 20 Oct 2026
   story: new Date(2026, 9, 22), // 22 Oct 2026
 };
 
-function daysUntil(d: Date) {
+export function daysUntil(d: Date) {
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   return Math.round((d.getTime() - today.getTime()) / 86400000);
 }
 
-type Tab = "writing" | "story" | "progress";
+type Tab = "today" | "writing" | "story" | "progress";
 
 export default function App() {
-  const [tab, setTab] = useState<Tab>("writing");
+  const [tab, setTab] = useState<Tab>("today");
   const [sessions, setSessions] = useState<Session[]>([]);
   const [ready, setReady] = useState(false);
 
@@ -61,6 +62,9 @@ export default function App() {
             </div>
           </div>
           <nav>
+            <button data-on={tab === "today" ? 1 : 0} onClick={() => setTab("today")}>
+              Today
+            </button>
             <button data-on={tab === "writing" ? 1 : 0} onClick={() => setTab("writing")}>
               Creative Writing
             </button>
@@ -76,6 +80,7 @@ export default function App() {
 
       <main className="wrap">
         {!ready && <section className="card empty">Opening the practice log…</section>}
+        {ready && tab === "today" && <Today sessions={sessions} setTab={setTab} />}
         {ready && tab === "writing" && <Writing onSave={save} />}
         {ready && tab === "story" && <Storytelling onSave={save} />}
         {ready && tab === "progress" && <Progress sessions={sessions} onDelete={remove} />}

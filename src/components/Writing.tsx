@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Scale from "./Scale";
-import { drawPrompt } from "../lib/prompt";
+import { drawPrompt, pickOfficialPrompt, OFFICIAL_PROMPT_COUNT } from "../lib/prompt";
 import { WRITING_AREAS } from "../data/criteria";
 import { putMedia } from "../lib/db";
 import type { Picture, WritingSession } from "../types";
@@ -11,6 +11,8 @@ type Props = { onSave: (s: WritingSession) => void };
 
 export default function Writing({ onSave }: Props) {
   const [prompt, setPrompt] = useState<Picture[]>(() => drawPrompt());
+  const [promptLabel, setPromptLabel] = useState<string | null>(null);
+  const [officialIdx, setOfficialIdx] = useState(0);
   const [phase, setPhase] = useState<"setup" | "running" | "score">("setup");
   const [left, setLeft] = useState(CONTEST_SECONDS);
   const [paused, setPaused] = useState(false);
@@ -71,6 +73,19 @@ export default function Writing({ onSave }: Props) {
     setMediaId(undefined);
     setPhotoName(null);
     setPrompt(drawPrompt());
+    setPromptLabel(null);
+  }
+
+  function useRandomPrompt() {
+    setPrompt(drawPrompt());
+    setPromptLabel(null);
+  }
+
+  function useOfficialPrompt(i: number) {
+    const { items, label } = pickOfficialPrompt(i);
+    setOfficialIdx(i);
+    setPrompt(items);
+    setPromptLabel(label);
   }
 
   async function attachPhoto(e: React.ChangeEvent<HTMLInputElement>) {
@@ -98,12 +113,23 @@ export default function Writing({ onSave }: Props) {
 
   return (
     <>
+      {phase === "setup" && (
+        <section className="card focus">
+          <div className="k">What do I do?</div>
+          <div className="v">
+            You'll get some pictures. Pick at least one and write a story about it. You have 30
+            minutes. Nobody helps you spell — just write the best story you can.
+          </div>
+        </section>
+      )}
+
       <section className="card">
         <h2>Prompt page</h2>
         <p className="sub">
-          One story, using at least one of these. Not all six have to appear. Paper and pencil — the
-          contest is handwritten, so the practice has to be too.
+          One story, using at least one of these. Not all of them have to appear. Paper and pencil —
+          the contest is handwritten, so the practice has to be too.
         </p>
+        {promptLabel && <div className="pill">Real contest page — {promptLabel}</div>}
         <div className="grid6">
           {prompt.map((p, i) => (
             <div className="pic" key={i}>
@@ -119,8 +145,11 @@ export default function Writing({ onSave }: Props) {
             <button className="b gold" onClick={() => setPhase("running")}>
               Start 30 minutes
             </button>
-            <button className="b ghost" onClick={() => setPrompt(drawPrompt())}>
-              Different pictures
+            <button className="b ghost" onClick={useRandomPrompt}>
+              Random practice pictures
+            </button>
+            <button className="b ghost" onClick={() => useOfficialPrompt((officialIdx + 1) % OFFICIAL_PROMPT_COUNT)}>
+              Real past contest page
             </button>
           </div>
         )}

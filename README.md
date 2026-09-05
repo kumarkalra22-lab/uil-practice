@@ -109,6 +109,15 @@ group (`who` / `thing` / `place` / `event`). Each generated page draws two
 characters, two objects, one place and one event — a page of six purely random
 items often gives a child nothing to build a plot from.
 
+The Creative Writing tab also has a "Real past contest page" button that
+cycles through the 9 actual picture pages used in past UIL A+ Creative
+Writing grade 2 contests (2017-18 through 2019-20, from the district's own
+packets), five real items per page instead of the generated six. Those are
+in `src/data/officialPrompts.ts`. The story library (`src/data/stories.ts`)
+has grown to five originals for more variety across six weeks of practice —
+the packets' own contest stories are copyrighted, so those aren't reproduced
+here, only the format they follow.
+
 ## Changing the contest dates
 
 `src/App.tsx`, top of the file. The header countdown follows.

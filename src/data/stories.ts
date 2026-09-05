@@ -190,4 +190,120 @@ And not one single person in Marbury complained.
 
 They never did again — not once, not ever — although Mr. Applebee did mention, from time to time, that he could hear it with the deaf ear.`,
   },
+  {
+    id: "map",
+    title: "The Map That Was Missing a River",
+    beats: [
+      "Delroy finds an old paper map of the town folded inside a library book.",
+      "The map matches everything except one thing: it shows no river, though the town has a wide one.",
+      "His sister Nell says the map must just be wrong, but Delroy wants to check.",
+      "They walk the riverbank looking for where a map like this would have been made.",
+      "They find a flat stone with old letters carved in it, worn almost smooth.",
+      "The stone says the river changed course after a flood, long before either grandparent was born.",
+      "Delroy realizes the map isn't wrong — it's just older than the river's current path.",
+      "They bring the map to the town library so it can be labeled with the true date.",
+      "The librarian adds a note: 'Correct for its time,' and Delroy decides that's true of lots of things.",
+    ],
+    text: `Delroy found the map by accident, folded into fourths and tucked inside the back cover of a library book about castles. It was thin as onion skin and the color of weak tea, and when he opened it all the way on his bedroom floor, it turned out to be a map of his own town.
+
+He could tell right away, even though none of the streets had the names they had now. There was the hill with the water tower, drawn as a bare bump. There was the shape of Main Street, curving the same lazy curve it curved today. There was the old schoolhouse, marked with a tiny bell.
+
+But there was one thing on the map that was not true, and Delroy knew it the second he saw the gap where it should have been.
+
+There was no river.
+
+Delroy's town had a river. It was wide and slow and brown after rain, and it ran along the east side of town behind the grocery store, and everyone who lived there had grown up throwing rocks into it. A map of this town without the river was like a map of a face without a nose.
+
+He brought it to his sister Nell, who was twelve and treated most of Delroy's discoveries as slightly beneath her attention.
+
+"It's just a wrong map," Nell said, barely looking up. "Old maps get things wrong all the time."
+
+"But everything else is right," Delroy said. "The hill's right. The street's right. Why would they get the river wrong? It's the biggest thing in town."
+
+Nell looked a little longer this time. She had to admit he had a point.
+
+They decided, in the way that only makes sense to two kids with a Saturday to spare, to walk the riverbank and see if they could figure out what had happened. They brought the map, a bag of pretzels, and Nell's phone in case anything needed a photograph.
+
+They walked from the grocery store north, following the water, matching the bends of the river against the empty space on the old map where the river should have been. For a long time, nothing lined up at all. The paper river simply wasn't there.
+
+Then, almost at the edge of town, where the water bent hard to the left around a stand of cottonwood trees, Nell noticed something in the tall grass. A flat gray stone, wider than a manhole cover, with letters cut into it so old and worn that they had to run their fingers along the grooves to be sure they weren't just cracks.
+
+It took them a while, kneeling in the grass, to read it out loud together, one letter at a time.
+
+FLOOD OF THAT YEAR MOVED THE RIVER TO ITS PRESENT COURSE.
+
+Delroy sat back on his heels. "The river used to be somewhere else," he said slowly. "It used to run through where the map doesn't show it — because back then, it wasn't there yet."
+
+"So the map wasn't wrong," Nell said. "It was just... early."
+
+They looked at the space between the stone and the current riverbank — maybe two hundred yards of flat ground, with nothing on it now but grass and one stubborn cottonwood tree — and tried to picture the whole river picking itself up and sliding sideways after a single storm, the way you'd drag a rug across a floor.
+
+"It's not a mistake," Delroy said. "It's just from before."
+
+They carried the map to the town library the next week, pretzels and all, and showed it to the librarian, who got very excited in a way most adults did not get excited about paper. She said it might be the oldest map of the town anyone had brought in, and she wanted to have it framed for the reading room.
+
+Before she hung it, she wrote a small card to go underneath it. It said: Town Map, undated. Correct for its time — the river has since moved.
+
+Delroy read the card three times. He liked "correct for its time" so much that he said it to himself the whole walk home, and then a few more times that week, about other things — his old shoes, a fact he'd once believed about the moon, the height he used to be marked at on the kitchen doorframe. Not wrong. Just from before.
+
+The map still hangs in the reading room today, missing its river, exactly right.`,
+  },
+  {
+    id: "kite",
+    title: "The Kite That Wouldn't Come Down",
+    beats: [
+      "On the last windy day of March, Amara's kite string snaps while she is flying it at the park.",
+      "The kite sails up and over the trees instead of falling, and keeps going.",
+      "Amara chases it through the park, over the footbridge, and past the fire station.",
+      "Mr. Okafor the mail carrier sees it too and joins the chase on his bike.",
+      "The kite finally catches on the highest branch of the oak tree outside the library.",
+      "Nobody can reach it — not with a ladder, not with a broom, not by climbing.",
+      "Amara decides to leave it there instead of giving up on it completely.",
+      "All spring, birds use bits of the kite's tail to build a nest in that same tree.",
+      "In summer the wind finally frees the kite, and Amara finds it tangled in her own back fence.",
+    ],
+    text: `The last windy day of March was always the best day to fly a kite, and Amara knew it, so she was at the park before anyone else, with a red diamond kite her uncle had given her and a spool of string wound as tight as she could wind it.
+
+The kite went up fast. It always did on a day like that — one good run across the grass and it was already higher than the swing set, tugging so hard on the string that Amara had to lean back with her whole body to keep from being pulled forward.
+
+She was watching a hawk circle far above when she heard the sound she would remember for the rest of that spring: a small, flat snap, like a rubber band breaking.
+
+The string had given out right at the spool.
+
+Amara expected the kite to drop. Kites always dropped when the string broke — she had seen it happen to other kids a dozen times, a sad little swoop down into the grass. But this kite did not drop. It caught a gust just as the string let go, and instead of falling, it climbed, tipping sideways, sailing clean over the top of the park's tallest oak trees and out toward the streets beyond.
+
+"Wait!" Amara shouted, to no one, because a kite cannot wait.
+
+She ran after it anyway. She ran across the grass, over the little footbridge that crossed the drainage ditch, past the fire station where two firefighters were washing the truck and looked up just long enough to watch a red diamond drift by over their heads.
+
+"That yours?" one of them called.
+
+"It's getting away!" Amara called back, and kept running.
+
+She wasn't the only one who noticed it. Mr. Okafor, who carried the mail on their street and rode a bicycle with a wire basket, spotted the kite from two blocks over and, being the kind of person who could not resist an interesting problem, turned his bike around and pedaled alongside Amara instead of finishing his route.
+
+"Where's it headed?" he asked, coasting easy while Amara ran flat out.
+
+"I don't know! It's not supposed to fly by itself!"
+
+They chased it for six blocks, the kite always a little higher and a little farther than either of them expected, dipping low enough to seem catchable and then lifting again just out of reach, the way a kite that has decided it likes freedom will do.
+
+It finally lost its nerve — or its wind — right outside the town library, catching hard on the very highest branch of the enormous old oak tree that grew beside the front steps. The tail streamed down through the leaves, red against green, completely and thoroughly stuck.
+
+They tried everything reasonable. Mr. Okafor found a ladder in the library's supply closet, but it reached only halfway. The head librarian brought out a long-handled broom, but the branch was well beyond even that. A boy from Amara's class offered to climb it and was firmly and immediately told no by three different adults.
+
+Amara stood at the bottom of the tree for a long time, looking up.
+
+"I could just leave it," she finally said, mostly to herself. "It went where it wanted to go. Maybe that's allowed."
+
+Mr. Okafor, who had seen a lot of things from his bicycle over the years, nodded like this made perfect sense to him.
+
+So the kite stayed. All through April, Amara walked past the library on her way to school and looked up at the little patch of red still caught in the highest branches, fading slowly in the sun. By May, she noticed something else up there too — a messy tangle of twigs and grass, and threads of red kite-tail woven right through it, holding it together. A pair of sparrows had built a nest using pieces the wind had worked loose, one thread at a time.
+
+By the end of June, the nest was empty — the sparrows had raised their family and gone — and one hot, gusty afternoon in July, Amara came home from swimming to find something red and sun-bleached tangled in the chain-link fence at the back of her own yard, three streets and one whole season away from the library oak.
+
+It was her kite. What was left of it, anyway — patched with grass, faded to pink, missing most of its tail.
+
+Amara untangled it carefully and brought it inside, and even though it never flew again, she kept it on her windowsill all summer, because as far as she was concerned, it had earned the rest.`,
+  },
 ];

@@ -1,4 +1,5 @@
 import { PICTURES } from "../data/pictures";
+import { OFFICIAL_PROMPTS } from "../data/officialPrompts";
 import type { Picture } from "../types";
 
 function take(pool: Picture[], n: number, used: Set<string>): Picture[] {
@@ -35,3 +36,14 @@ export function drawPrompt(): Picture[] {
 }
 
 export const wordCount = (t: string) => (t.trim().match(/\S+/g) || []).length;
+
+/**
+ * One of the 9 real past-contest picture pages, in order. Cycles rather than
+ * draws randomly so a practice session can work through all of them.
+ */
+export function pickOfficialPrompt(i: number) {
+  const page = OFFICIAL_PROMPTS[i % OFFICIAL_PROMPTS.length];
+  return { items: page.items, label: `${page.year} · ${page.round}` };
+}
+
+export const OFFICIAL_PROMPT_COUNT = OFFICIAL_PROMPTS.length;
